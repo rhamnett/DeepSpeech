@@ -105,9 +105,9 @@ def main(args, _):
             print('Transcription   dumped to %s.out' % args.dump)
 
 def parse_args():
-    parser = argparse.ArgumentParser(description='Computing TFLite accuracy')
+    parser = argparse.ArgumentParser(description='Computing model accuracy')
     parser.add_argument('--model', required=True,
-                        help='Path to the model (protocol buffer binary file)')
+                        help='Path to the model')
     parser.add_argument('--scorer', required=True,
                         help='Path to the external scorer file')
     parser.add_argument('--csv', required=True,
